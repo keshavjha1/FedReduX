@@ -1,7 +1,7 @@
 import os
 import tarfile
 import glob
-
+import subprocess
 # get current directory
 
 file_names = list()
@@ -38,27 +38,25 @@ def child_extarct(file_names):
     current_dir = os.getcwd();
     for file in file_names:
         # remove tar file
-        print("filename", file)
-        # change directory to file
-
-        os.chdir(current_dir+"/"+file)
-
+        print("directory", file)
         all_gz_files = glob.glob('*.gz')
-        #untar tech.gz file
-        #  unzip .gz extenions files in current directory and store in list
-        all
-
-
-
-        # Extract only the tech.gz files
         tech_gz_files = [file for file in all_gz_files if 'tech.gz' in file]
-        for file in all_gz_files:
-            if file.endswith('.gz'):
-                tar = tarfile.open(file, 'r:gz')
-                tar.extractall()
-                tar.close()
         # Print the list of tech.gz files
         print(tech_gz_files)
+        # change directory to file
+
+
+        dir_path= current_dir+"/"+file;
+        for filename in os.listdir(dir_path):
+            # check if the file is compressed using gzip
+            if filename.endswith(".gz"):
+                # create the full path to the file
+                filepath = os.path.join(dir_path, filename)
+                print("gunziping file: " + filepath)
+                # run the gunzip command using subprocess module
+                subprocess.run(["gunzip", "-f", filepath])
+
+
 
 if __name__ == '__main__':
     main()
