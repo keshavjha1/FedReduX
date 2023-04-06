@@ -2,7 +2,7 @@ import os
 import tarfile
 import glob
 import subprocess
-# get current directory
+
 
 file_names = list()
 
@@ -58,6 +58,39 @@ def child_extarct(file_names):
 
 
 
+
+
+#  Write a function to search for a word in a file
+def search_word_in_file(file_name, word):
+    # open file in read mode
+    with open(file_name, 'r') as read_obj:
+        # read all lines in the file one by one
+        for line in read_obj:
+            # for each line, check if line contains the given word
+            if word in line:
+                return True
+    return False
+#  Write a function to search for a word in all files in a directory and all subdirectories
+def search_word_in_all_files(filedir, word):
+    # define a list to store file names
+    file_names = list()
+    current_dir = os.getcwd();
+
+    print(current_dir)
+    # loop through all files in directory
+    for file_dir in filedir:
+        temp_dir=current_dir+"/"+file_dir
+        for file_name in os.listdir(temp_dir):
+            # check if file is .txt file
+            if file_name.endswith('.tech'):
+                # store file_name in list
+                if search_word_in_file(temp_dir+"/"+file_name, word):
+                    print("Word " + word + " found in file " + file_name)
+
+
+
+
 if __name__ == '__main__':
     main()
     child_extarct(file_names);
+    search_word_in_all_files(file_names, 'Failed: Bad handle')

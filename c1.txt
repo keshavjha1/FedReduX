@@ -1,0 +1,189 @@
+local7.debug: Jan  4 02:14:24 vsmart Watchdog: Timer started; sleeping for 600 secs...
+local7.debug: Jan  4 02:14:24 vsmart vScript:
+local7.debug: Jan  4 02:14:24 vsmart vScript: sysmgr: no previous version present, not migrating config
+local7.debug: Jan  4 02:14:24 vsmart vScript: sysmgr: copying over configdb to symlink
+local7.debug: Jan  4 02:14:24 vsmart stray: ./run: line 607: [: : integer expression expected
+local7.debug: Jan  4 02:14:24 vsmart stray: ./run: line 607: [: : integer expression expected
+local7.debug: Jan  4 02:14:24 vsmart stray: Not running on Xen, suitable for crash dump kernel
+local7.notice: Jan  4 02:14:24 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200002: Starting system with viptela software version '18.3.4'
+local7.notice: Jan  4 02:14:24 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200050: System status blinking green (reason: Coming up)
+local7.notice: Jan  4 02:14:24 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200042: Created shared memory vconfd_shared_region
+local7.notice: Jan  4 02:14:24 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200031: Confd db initialization not complete. Deleting cdb and starting afresh..
+local7.debug: Jan  4 02:14:24 vsmart SYSMGR[355]: sysmgr_read_config_file[656]: %SYSMGR_DBG_MAIN-1: Starting : /usr/sbin/vdaemon -f -p vsmart  -c 0 -m 4
+local7.debug: Jan  4 02:14:24 vsmart SYSMGR[355]: sysmgr_read_config_file[656]: %SYSMGR_DBG_MAIN-1: Starting : /usr/sbin/vdaemon -f -p vsmart  -c 1 -m 4
+local7.debug: Jan  4 02:14:24 vsmart SYSMGR[355]: sysmgr_read_config_file[656]: %SYSMGR_DBG_MAIN-1: Starting : /usr/sbin/vdaemon -f -p vsmart  -c 2 -m 4
+local7.debug: Jan  4 02:14:24 vsmart SYSMGR[355]: sysmgr_read_config_file[656]: %SYSMGR_DBG_MAIN-1: Starting : /usr/sbin/vdaemon -f -p vsmart  -c 3 -m 4
+local7.info: Jan  4 02:14:24 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon confd @ pid 521 in vpn 65534
+local7.debug: Jan  4 02:14:24 vsmart SYSMGR[355]: sysmgr_confd_init[2596]: %SYSMGR_DBG_CONFD-1: Failed to connect to confd (3)
+local7.debug: Jan  4 02:14:26 vsmart SYSMGR[572]: sysmgr_confd_wait_phase0[4350]: %SYSMGR_DBG_MAIN-1: Confd wait phase0..
+local7.debug: Jan  4 02:14:26 vsmart SYSMGR[572]: sysmgr_confd_wait_phase0[4359]: %SYSMGR_DBG_CONFD-1: Confd wait phase0 done
+local7.debug: Jan  4 02:14:26 vsmart SYSMGR[355]: sysmgr_do_sigchild_signal[2229]: %SYSMGR_DBG_MAIN-1: Sysmgr child in charge of migrating confd/ncs to phase0 exited normally
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon cfgmgr @ pid 591 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon ompd @ pid 592 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon resolvd @ pid 593 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon snmpd @ pid 594 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon ttmd @ pid 595 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vdaemon_0 @ pid 596 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vdaemon_1 @ pid 597 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vdaemon_2 @ pid 598 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vdaemon_3 @ pid 599 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vdhcpcd @ pid 600 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon vtracker @ pid 601 in vpn 0
+local7.info: Jan  4 02:14:26 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon zebra @ pid 602 in vpn 0
+local7.info: Jan  4 02:14:27 vsmart TTMD[595]: %Viptela-vsmart-TTMD-6-INFO-1200001: Starting
+local7.info: Jan  4 02:14:27 vsmart SNMPD[594]: %Viptela-vsmart-SNMPD-6-INFO-2100001: Starting
+local7.info: Jan  4 02:14:27 vsmart RESOLVD[593]: %Viptela-vsmart-RESOLVD-6-INFO-2000001: Starting
+local7.info: Jan  4 02:14:27 vsmart VTRACKER[601]: %Viptela-vsmart-VTRACKER-6-INFO-1700001: Starting
+local7.info: Jan  4 02:14:27 vsmart DHCP_CLIENT[600]: %Viptela-vsmart-DHCP_CLIENT-6-INFO-1300001: Starting
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink_interface_addr can't find interface by index 1
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink-cmd filter function error
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: Connect fail to socket - /var/run/quagga/zebra_protobuf_notify.api ret: -1 errno: No such file or directory
+local7.info: Jan  4 02:14:27 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon zebra @ pid 602 came up in vpn 0 (12 1)
+local7.debug: Jan  4 02:14:27 vsmart RESOLVD[593]: resolv_daemon_init[397]: Initialization - Stage 1 complete
+local7.debug: Jan  4 02:14:27 vsmart RESOLVD[593]: resolv_daemon_init[410]: Inline Initialization - DPI start
+local7.notice: Jan  4 02:14:27 vsmart OMPD[592]: %Viptela-vsmart-OMPD-5-NTCE-400001: Starting
+local7.debug: Jan  4 02:14:27 vsmart OMPD[592]: main[489]: Initialized status LED to OFF
+local7.info: Jan  4 02:14:27 vsmart CFGMGR[591]: %Viptela-vsmart-CFGMGR-6-INFO-300001: Starting
+local7.debug: Jan  4 02:14:27 vsmart CFGMGR[591]: cfgmgr_init_sysmgr_conn[747]: Waiting for connection to sysmgr to come up
+local7.debug: Jan  4 02:14:27 vsmart CFGMGR[591]: cfgmgr_init_abort_signals[528]: Registering 0x7f432d6d0430 for signal 12
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_1[597]: vdaemon_init_root_cert_intall_inotify[2101]: %VDAEMON_DBG_MISC-1: File fd for /etc/viptela/rootcert_reinstall is 0x7fe5cfbf01d0
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_1[597]: vbond_init[843]: %VDAEMON_DBG_ERROR-1: DNS init success
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_3[599]: vdaemon_init_root_cert_intall_inotify[2101]: %VDAEMON_DBG_MISC-1: File fd for /etc/viptela/rootcert_reinstall is 0x7f4feb7d71d0
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_3[599]: vbond_init[843]: %VDAEMON_DBG_ERROR-1: DNS init success
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_2[598]: vdaemon_init_root_cert_intall_inotify[2101]: %VDAEMON_DBG_MISC-1: File fd for /etc/viptela/rootcert_reinstall is 0x7f363aec71d0
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_2[598]: vbond_init[843]: %VDAEMON_DBG_ERROR-1: DNS init success
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: generate_or_parse_uuid[5763]: %VDAEMON_DBG_MISC-1: Valid UUID cc86aa88-e8f2-4f60-ae53-253affafbfe3 found
+local7.debug: Jan  4 02:14:27 vsmart OMPD[592]: omp_check_new_oper_state[1220]: OMP device type is unkown
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_init_root_cert_intall_inotify[2101]: %VDAEMON_DBG_MISC-1: File fd for /etc/viptela/rootcert_reinstall is 0x7f1f51a2cd40
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vbond_init[843]: %VDAEMON_DBG_ERROR-1: DNS init success
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink_interface_addr can't find interface by index 8
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink-listen filter function error
+local7.debug: Jan  4 02:14:27 vsmart ZEBRA[602]: RTM_NEWROUTE ipv4 multicast proto kernel
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink_interface_addr can't find interface by index 7
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink-listen filter function error
+local7.debug: Jan  4 02:14:27 vsmart ZEBRA[602]: RTM_NEWROUTE ipv4 multicast proto kernel
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink_interface_addr can't find interface by index 9
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink-listen filter function error
+local7.debug: Jan  4 02:14:27 vsmart ZEBRA[602]: RTM_NEWROUTE ipv4 multicast proto kernel
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink_interface_addr can't find interface by index 10
+local7.err: Jan  4 02:14:27 vsmart ZEBRA[602]: netlink-listen filter function error
+local7.debug: Jan  4 02:14:27 vsmart ZEBRA[602]: RTM_NEWROUTE ipv4 multicast proto kernel
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=2049, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=1
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:27 vsmart RESOLVD[593]: resolv_daemon_init[417]: Inline Initialization - DPI end
+local7.debug: Jan  4 02:14:27 vsmart RESOLVD[593]: resolv_daemon_init[420]: Initialization - Stage 2 complete
+local7.info: Jan  4 02:14:27 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vdaemon_0 @ pid 596 came up in vpn 0 (12 2)
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_rtm_send_hello_msg[104]: %VDAEMON_DBG_CONFD-1: Registered with zebra with hello
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_rtm_send_interface_register_msg[129]: %VDAEMON_DBG_CONFD-1: registered with zebra with interface register
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_rtm_msg_conn_up[145]: %VDAEMON_DBG_CONFD-1: registered with zebra. RTM came up.
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth0.
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=2049, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=1
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth1.
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=2049, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=1
+local7.debug: Jan  4 02:14:27 vsmart VDAEMON_0[596]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon ttmd @ pid 595 came up in vpn 0 (12 3)
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon snmpd @ pid 594 came up in vpn 0 (12 4)
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vtracker @ pid 601 came up in vpn 0 (12 5)
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vdhcpcd @ pid 600 came up in vpn 0 (12 6)
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon resolvd @ pid 593 came up in vpn 0 (12 7)
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon ompd @ pid 592 came up in vpn 0 (12 8)
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_main[355]: Initiate cfgmgr main
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon cfgmgr @ pid 591 came up in vpn 0 (12 9)
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_get_port_macaddr[3043]: SIOCGIFHWADDR failed for loop0, err: No such device
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_quagga_pb_send_message[831]: Quagga daemon - ospfd link is down (vpn:0), skipping
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_vpn_default_init[1071]: Initializing internal VPN (65530) ..
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_get_port_macaddr[3043]: SIOCGIFHWADDR failed for loop0, err: No such device
+local7.debug: Jan  4 02:14:28 vsmart stray: Not enough information: "dev" argument is required.
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_kernel_subif_delete[2451]: Command Failed: ip netns exec 65530 ip link delete  type vlan
+local7.debug: Jan  4 02:14:28 vsmart SYSMGR[355]: sysmgr_client_read_cb[755]: %SYSMGR_DBG_DAEMON-1: Received start vpn daemons request from daemon cfgmgr @ pid 591 in vpn 65530
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon sshd @ pid 752 in vpn 65530
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon zebra @ pid 753 in vpn 65530
+local7.err: Jan  4 02:14:28 vsmart ZEBRA.65530[753]: netlink_interface_addr can't find interface by index 1
+local7.err: Jan  4 02:14:28 vsmart ZEBRA.65530[753]: netlink-cmd filter function error
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon zebra @ pid 753 came up in vpn 65530 (1 1)
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_get_port_macaddr[3043]: SIOCGIFHWADDR failed for loop0, err: No such device
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_if_init[1189]: Starting internal interface init
+local7.debug: Jan  4 02:14:28 vsmart ZEBRA[602]: RTM_NEWROUTE ipv6 unicast proto boot
+local7.debug: Jan  4 02:14:28 vsmart ZEBRA[602]: RTM_NEWROUTE ipv6 unicast proto kernel
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_0[596]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth0.
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_0[596]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=2049, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=1
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_0[596]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_confd_startup_modify_transaction[2625]: Starting CFGMGR: beta(1), release(1)
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_confd_create_mgmt_vpn[262]: Creating mgmt vpn (512)..
+local7.debug: Jan  4 02:14:28 vsmart stray: /etc/ssh/sshd_config line 5: Deprecated option UsePrivilegeSeparation^M
+local7.debug: Jan  4 02:14:28 vsmart CFGMGR[591]: cfgmgr_confd_startup_set_snmp_engine_id[332]: SNMP Engine ID - can't get default macaddr for interface eth0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_rtm_send_hello_msg[104]: %VDAEMON_DBG_CONFD-1: Registered with zebra with hello
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_rtm_send_interface_register_msg[129]: %VDAEMON_DBG_CONFD-1: registered with zebra with interface register
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_rtm_msg_conn_up[145]: %VDAEMON_DBG_CONFD-1: registered with zebra. RTM came up.
+local7.info: Jan  4 02:14:28 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vdaemon_2 @ pid 598 came up in vpn 0 (12 10)
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth0.
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth1.
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:28 vsmart VDAEMON_2[598]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:28 vsmart SYSMGR[355]: sysmgr_client_read_cb[771]: %SYSMGR_DBG_DAEMON-1: Daemon cfgmgr @ pid 591 connected to confd
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.info: Jan  4 02:14:29 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vdaemon_1 @ pid 597 came up in vpn 0 (12 11)
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_rtm_send_hello_msg[104]: %VDAEMON_DBG_CONFD-1: Registered with zebra with hello
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_rtm_send_interface_register_msg[129]: %VDAEMON_DBG_CONFD-1: registered with zebra with interface register
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_rtm_msg_conn_up[145]: %VDAEMON_DBG_CONFD-1: registered with zebra. RTM came up.
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth0.
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth1.
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:29 vsmart ZEBRA[602]: RTM_NEWROUTE ipv6 multicast proto
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_2[598]: vdaemon_rtm_client_proc_if_state_chg[336]: %VDAEMON_DBG_CONFD-1: ipaddr add is link local address. Ignore
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_0[596]: vdaemon_rtm_client_proc_if_state_chg[336]: %VDAEMON_DBG_CONFD-1: ipaddr add is link local address. Ignore
+local7.debug: Jan  4 02:14:29 vsmart ZEBRA[602]: RTM_NEWROUTE ipv6 multicast proto
+local7.debug: Jan  4 02:14:29 vsmart VDAEMON_1[597]: vdaemon_rtm_client_proc_if_state_chg[336]: %VDAEMON_DBG_CONFD-1: ipaddr add is link local address. Ignore
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_vedge_list_upload[1806]: %VDAEMON_DBG_MISC-1: uploading the new vedge-list diff
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_reinstall_rootcerts[1882]: %VDAEMON_DBG_MISC-1: Certificate store re-inited
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_reinstall_rootcerts[1884]: %VDAEMON_DBG_MISC-1: Setting rootcert flag in cdb
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_rtm_send_hello_msg[104]: %VDAEMON_DBG_CONFD-1: Registered with zebra with hello
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_rtm_send_interface_register_msg[129]: %VDAEMON_DBG_CONFD-1: registered with zebra with interface register
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_rtm_msg_conn_up[145]: %VDAEMON_DBG_CONFD-1: registered with zebra. RTM came up.
+local7.info: Jan  4 02:14:30 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200011: Daemon vdaemon_3 @ pid 599 came up in vpn 0 (12 12)
+local7.debug: Jan  4 02:14:30 vsmart SYSMGR[355]: sysmgr_client_conn_up_processing[557]: %SYSMGR_DBG_MAIN-1: All daemons are up in VPN 0 (total = 15, started = 12, up = 12) and Confd is ready to move to phase1
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth0.
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_rtm_client_proc_if_state_chg[336]: %VDAEMON_DBG_CONFD-1: ipaddr add is link local address. Ignore
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_disable_my_tloc[1276]: %VDAEMON_DBG_EVENTS-1: Disabling tloc eth1.
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_dump_flags[7702]: %VDAEMON_DBG_CONFD-1: Flags=1, device-type=1, vbond-dns=0, domain-id=0, site-id=0, system-ip=0, wan-intf=0, org-name=0, cert-inst=0, root-cert-inst=0, port-offset=0, uuid=0
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: is_config_active_non_vbond[7724]: %VDAEMON_DBG_CONFD-1: Returning 0
+local7.debug: Jan  4 02:14:30 vsmart SYSMGR[824]: sysmgr_confd_set_phase2[435]: %SYSMGR_DBG_MAIN-1: Confd start phase1..
+local7.info: Jan  4 02:14:30 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-6-INFO-200017: Started daemon sshd @ pid 825 in vpn 0
+local7.notice: Jan  4 02:14:30 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200050: System up with software version '18.3.4'
+local7.notice: Jan  4 02:14:30 vsmart SYSMGR[355]: %Viptela-vsmart-SYSMGR-5-NTCE-200050: System status solid green (reason: All daemons up)
+local7.debug: Jan  4 02:14:30 vsmart VDAEMON_3[599]: vdaemon_cfg_confd_params_threaded_set[6087]: %VDAEMON_DBG_CONFD-1: Failed to start a transaction -1,  confd_str operation in wrong state (17) Can't start read-write transaction before phase1
+local7.debug: Jan  4 02:14:30 vsmart stray: /etc/ssh/sshd_config line 5: Deprecated option UsePrivilegeSeparation^M
+local7.debug: Jan  4 02:14:30 vsmart CFGMGR[591]: cfgmgr_logging_conf_changed[789]: Syslog configuration changed. Sighup syslogd..
