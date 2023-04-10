@@ -1,4 +1,4 @@
-log_level,timestamp,component,log_message, Annotation 
+log_level,timestamp,component,log_message 
 local7.debug, Jan  4 02:14:24,vsmart Watchdog,Timer started; sleeping for 600 secs..., 
 local7.debug, Jan  4 02:14:24,vsmart vScript,"sysmgr: no previous version present, not migrating config"
 local7.debug, Jan  4 02:14:24,vsmart vScript,sysmgr: copying over configdb to symlink
