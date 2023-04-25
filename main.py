@@ -1,96 +1,59 @@
-import os
-import tarfile
-import glob
-import subprocess
-
-
-file_names = list()
-
+# write main
+from LogModel import LogModel
+from filter import split_string, calculateProbablityAndAssignValueToLogModel, counter, paseredCounter
+import csv
 
 def main():
-    # loop through all files in directory
-    current_dir = os.getcwd()
-    print(current_dir)
-    # define a list to store file names
+    with open('c2.txt', 'r') as read_obj:
+        lines = read_obj.readlines()
+        lines = [line.rstrip() for line in lines]
 
-    # loop through all files in directory
-    for file_name in os.listdir(current_dir):
-        # check if file is .tgz file
-        if file_name.endswith('.tgz'):
-            # open tar file`
-            tar = tarfile.open(file_name, 'r:gz')
-            # remove first word upto hypen from file name
-            # remove .tgz from file name
-            file_name = file_name[:-4]
-            # store file_name in list
-            file_names.append(file_name)
-            # extract all files to current directory
-            tar.extractall()
-            print("Extracting completed " + file_name)
+        lines_dict = {}
+        lines_list = []
+        invalidList = []
+        for line in lines:
+            logModel = split_string(line)
+            if isinstance(logModel, LogModel):
+                lines_dict[logModel.timestamp] = logModel
+                lines_list.append(logModel)
+            else:
+                invalidList.append(line)
+                print("Not a valid log line")
 
-            # close tar file
-            tar.close()
+        calculateProbablityAndAssignValueToLogModel(lines_list)
 
+        # save lines_dict into csv file
+        try:
+            with open('c2.csv', 'w') as csv_file:
+                writer = csv.writer(csv_file)
+                writer.writerow(
+                    ["index", "log_level", "timestamp", "device", "component", "log_message", "json", "probability"])
+                for i, line in enumerate(lines_list):
+                    probablity = 0.0
+                    if hasattr(line, 'probability'):
+                        probablity = line.probability
+                    else:
+                        probablity = 0.0
 
-#write main function
-def child_extarct(file_names):
-    #define a string variable to store current directory name
-    current_dir = os.getcwd();
-    for file in file_names:
-        # remove tar file
-        print("directory", file)
-        all_gz_files = glob.glob('*.gz')
-        tech_gz_files = [file for file in all_gz_files if 'tech.gz' in file]
-        # Print the list of tech.gz files
-        print(tech_gz_files)
-        # change directory to file
+                    writer.writerow(
+                        [i, line.log_level, line.timestamp, line.device, line.component, line.log_message, line.json,
+                         probablity])
 
+            with open('invalid.csv', 'w') as csv_file:
+                writer = csv.writer(csv_file)
+                writer.writerow(["invalid log lines"])
+                for line in invalidList:
+                    writer.writerow([line])
+            print(" Writing to the CSV file: ")
 
-        dir_path= current_dir+"/"+file;
-        for filename in os.listdir(dir_path):
-            # check if the file is compressed using gzip
-            if filename.endswith(".gz"):
-                # create the full path to the file
-                filepath = os.path.join(dir_path, filename)
-                print("gunziping file: " + filepath)
-                # run the gunzip command using subprocess module
-                subprocess.run(["gunzip", "-f", filepath])
-
-
-
-
-
-#  Write a function to search for a word in a file
-def search_word_in_file(file_name, word):
-    # open file in read mode
-    with open(file_name, 'r') as read_obj:
-        # read all lines in the file one by one
-        for line in read_obj:
-            # for each line, check if line contains the given word
-            if word in line:
-                return True
-    return False
-#  Write a function to search for a word in all files in a directory and all subdirectories
-def search_word_in_all_files(filedir, word):
-    # define a list to store file names
-    file_names = list()
-    current_dir = os.getcwd();
-
-    print(current_dir)
-    # loop through all files in directory
-    for file_dir in filedir:
-        temp_dir=current_dir+"/"+file_dir
-        for file_name in os.listdir(temp_dir):
-            # check if file is .txt file
-            if file_name.endswith('.tech'):
-                # store file_name in list
-                if search_word_in_file(temp_dir+"/"+file_name, word):
-                    print("Word " + word + " found in file " + file_name)
-
+        except Exception as e:
+            print("An error occurred while writing to the CSV file: ", str(e))
 
 
 
 if __name__ == '__main__':
     main()
-    child_extarct(file_names);
-    search_word_in_all_files(file_names, 'Failed: Bad handle')
+
+    print("==========\n")
+    print("no of string input", counter)
+    print("no of string parsed", paseredCounter)
